@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignId('instructor_id')->constrained('users')->onDelete('cascade');
             $table->string('description');
             $table->string('syllabus');
+            $table->string('image');
             $table->double('price');
             $table->timestamps();
         });

@@ -15,6 +15,7 @@ class Course extends Model
         'instructor_id',
         'description',
         'syllabus',
+        'image',
         'price',
     ];
 }
