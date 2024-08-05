@@ -18,4 +18,8 @@ class Course extends Model
         'image',
         'price',
     ];
+
+    public function instructor() {
+        return $this->belongsTo(User::class);
+    }
 }
