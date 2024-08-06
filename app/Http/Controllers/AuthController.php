@@ -36,11 +36,11 @@ class AuthController extends Controller
         }
 
         // Emang error di linter tp jalan kok :D
-        $token = auth()->user()->createToken('auth')->plainTextToken;
+        // $token = auth()->user()->createToken('auth')->plainTextToken;
 
         return response()->json([
             'message' => 'Login success',
-            'token' => $token,
+            // 'token' => $token,
             'user' => [
                 'name' => auth()->user()->name,
                 'email' => auth()->user()->email,
