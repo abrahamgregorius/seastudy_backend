@@ -69,7 +69,7 @@ class CourseController extends Controller
 
         //upload image
         $image = $request->file('image');
-        $imagePath = $image->storeAs('public/courses', $image->hashName());
+        $imagePath = $image->move(public_path() . 'courses/', $image->hashName());
 
         //create course
         $course = Course::create([
